@@ -19,8 +19,11 @@ class Graph:
         """
         Add a directed edge to the graph.
         """
-
-        self.vertices[v1].add(v2)
+        # Sprint
+        if v1 and v2 in self.vertices:
+            self.vertices[v1].add(v2)
+        else:
+            print('exception')
 
     def get_neighbors(self, vertex_id):
         """
@@ -144,3 +147,4 @@ if __name__ == '__main__':
     '''
     print(graph.dfs(1, 6))
     print(graph.dfs_recursive(1, 6))
+
