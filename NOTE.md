@@ -1,0 +1,1 @@
+Graphs are collections of data represented by nodes and connections between nodes.
