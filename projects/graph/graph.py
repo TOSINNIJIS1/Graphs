@@ -36,7 +36,7 @@ class Graph:
         Print each vertex in breadth-first order
         beginning from starting_vertex.
         """
-        pass  # TODO
+
 
     def dft(self, starting_vertex):
         """
@@ -106,6 +106,7 @@ if __name__ == '__main__':
         {1: {2}, 2: {3, 4}, 3: {5}, 4: {6, 7}, 5: {3}, 6: {3}, 7: {1, 6}}
     '''
     print(graph.vertices)
+    graph.add_edge('0', '4')
 
     '''
     Valid BFT paths:
