@@ -43,6 +43,11 @@ class SocialGraph:
         self.users = {}
         self.friendships = {}
         # !!!! IMPLEMENT ME
+        # We need to get id, we can use number of users for the ids
+        for user_id in range(num_users):
+            # we append it to the user
+            self.add_user(user_id)
+        # up next is the friends
 
         # Add users
 
