@@ -6,7 +6,7 @@ class SocialGraph:
     def __init__(self):
         self.last_id = 0
         self.users = {}
-        self.friendships = {}
+        self.friendships = {1: {8, 10, 5}, 2: {10, 5, 7}, 3: {4}, 4: {9, 3}, 5: {8, 1, 2}, 6: {10}, 7: {2}, 8: {1, 5}, 9: {4}, 10: {1, 2, 6}}
 
     def add_friendship(self, user_id, friend_id):
         """
@@ -43,6 +43,11 @@ class SocialGraph:
         self.users = {}
         self.friendships = {}
         # !!!! IMPLEMENT ME
+        # We need to get id, we can use number of users for the ids
+        for user_id in range(num_users):
+            # we append it to the user
+            self.add_user(user_id)
+        # up next is the friends
 
         # Add users
 
